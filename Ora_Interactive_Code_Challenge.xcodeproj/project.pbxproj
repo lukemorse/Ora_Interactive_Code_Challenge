@@ -14,12 +14,14 @@
 		AF3DD8431E5CE2FC00C75985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3DD8411E5CE2FC00C75985 /* Main.storyboard */; };
 		AF3DD8451E5CE2FC00C75985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3DD8441E5CE2FC00C75985 /* Assets.xcassets */; };
 		AF3DD8481E5CE2FC00C75985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3DD8461E5CE2FC00C75985 /* LaunchScreen.storyboard */; };
+		AF7BCB991E5F58AF00FFF3B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BCB981E5F58AE00FFF3B0 /* User.swift */; };
 		AF81BDE61E5E328C003174D8 /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81BDE41E5E328C003174D8 /* circle-user-7.png */; };
 		AF81BDE71E5E328C003174D8 /* text-list-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81BDE51E5E328C003174D8 /* text-list-7.png */; };
 		AF81BDF01E5E37C5003174D8 /* SingleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */; };
 		AF81BDF21E5E3B3A003174D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */; };
 		AF81BDF41E5E3DEE003174D8 /* plus-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */; };
 		AF81BDF61E5E422B003174D8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDF51E5E422B003174D8 /* ApiManager.swift */; };
+		AF81BE051E5F2568003174D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BE041E5F2568003174D8 /* Constants.swift */; };
 		AFADB5AF1E5D1D19006FFBBD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,12 +107,14 @@
 		AF3DD8471E5CE2FC00C75985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF3DD8491E5CE2FC00C75985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3DD84F1E5CE3B500C75985 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		AF7BCB981E5F58AE00FFF3B0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF81BDE41E5E328C003174D8 /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-user-7.png"; sourceTree = "<group>"; };
 		AF81BDE51E5E328C003174D8 /* text-list-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-list-7.png"; sourceTree = "<group>"; };
 		AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleChatViewController.swift; sourceTree = "<group>"; };
 		AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-simple-7.png"; sourceTree = "<group>"; };
 		AF81BDF51E5E422B003174D8 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		AF81BE041E5F2568003174D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,11 +150,11 @@
 		AF3DD83C1E5CE2FC00C75985 /* Ora_Interactive_Code_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				AF81BE021E5F240D003174D8 /* Utilities */,
+				AF81BDF81E5F23F2003174D8 /* Model */,
+				AF81BE001E5F2400003174D8 /* View */,
+				AF81BE011E5F2406003174D8 /* Controller */,
 				AF3DD83D1E5CE2FC00C75985 /* AppDelegate.swift */,
-				AF3D4B141E5CFC19003BDC2E /* LoginViewController.swift */,
-				AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */,
-				AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */,
-				AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */,
 				AF3DD8411E5CE2FC00C75985 /* Main.storyboard */,
 				AF81BDF51E5E422B003174D8 /* ApiManager.swift */,
 				AF3DD8441E5CE2FC00C75985 /* Assets.xcassets */,
@@ -175,6 +179,40 @@
 				AF3DD8671E5CE3B800C75985 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF81BDF81E5F23F2003174D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF7BCB981E5F58AE00FFF3B0 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AF81BE001E5F2400003174D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AF81BE011E5F2406003174D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D4B141E5CFC19003BDC2E /* LoginViewController.swift */,
+				AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */,
+				AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */,
+				AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF81BE021E5F240D003174D8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF81BE041E5F2568003174D8 /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +355,8 @@
 				AF3D4B151E5CFC19003BDC2E /* LoginViewController.swift in Sources */,
 				AF3DD83E1E5CE2FC00C75985 /* AppDelegate.swift in Sources */,
 				AF81BDF01E5E37C5003174D8 /* SingleChatViewController.swift in Sources */,
+				AF7BCB991E5F58AF00FFF3B0 /* User.swift in Sources */,
+				AF81BE051E5F2568003174D8 /* Constants.swift in Sources */,
 				AF81BDF61E5E422B003174D8 /* ApiManager.swift in Sources */,
 				AF81BDF21E5E3B3A003174D8 /* MainViewController.swift in Sources */,
 			);

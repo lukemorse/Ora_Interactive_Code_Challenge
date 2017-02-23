@@ -18,11 +18,19 @@ class ApiManager: NSObject {
     var userName: String?
     var authToken: String?
     
-    let URL_BASE = "https://private-93240c-oracodechallenge.apiary-mock.com/"
+    let URL_LOGIN = URL_BASE + "auth/login"
+    let URL_LOGOUT = URL_BASE + "auth/logout"
+    let URL_CREATE_USER = URL_BASE + "users"
+    let URL_CURRENT_PROFILE = URL_BASE + "users/current"
+    let URL_GET_CHATS = URL_BASE + "chats{?page,limit}"
+    let URL_NEW_CHAT = URL_BASE + "chats"
+    let URL_PATCH_CHAT = URL_BASE + "chats/{id}"
+    let URL_VIEW_WHOLE_CHAT = URL_BASE + "/chats/{id}/chat_messages"
+    let URL_NEW_MESSAGE = URL_BASE + "/chats/{id}/chat_messages{?page,limit}"
     
     func getAuthToken() {
         
-        Alamofire.request(URL_BASE + "auth/login", method: .post).responseJSON { response in
+        Alamofire.request(URL_LOGIN, method: .post).responseJSON { response in
             
 //            print("RESPONSE:"); print(response.response)
 //            print("DATA: "); print(response.data)
@@ -55,4 +63,23 @@ class ApiManager: NSObject {
             }
         }
     }
+    
+    func registerNewUser(user: User) {
+        
+        let params = [
+            "name" : user.name,
+            "email" : user.email,
+            "password" : user.password,
+            "confirm" : user.confirm
+                      ]
+        
+        Alamofire.request(URL_BASE + "auth/login", method: .post, parameters: params, encoding: URLEncoding.default).responseJSON { response in
+            
+            print(response)
+            
+        }
+    }
+    
+    
+    
 }
