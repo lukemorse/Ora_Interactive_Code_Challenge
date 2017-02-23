@@ -19,6 +19,7 @@
 		AF81BDF01E5E37C5003174D8 /* SingleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */; };
 		AF81BDF21E5E3B3A003174D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */; };
 		AF81BDF41E5E3DEE003174D8 /* plus-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */; };
+		AF81BDF61E5E422B003174D8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDF51E5E422B003174D8 /* ApiManager.swift */; };
 		AFADB5AF1E5D1D19006FFBBD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleChatViewController.swift; sourceTree = "<group>"; };
 		AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-simple-7.png"; sourceTree = "<group>"; };
+		AF81BDF51E5E422B003174D8 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */,
 				AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */,
 				AF3DD8411E5CE2FC00C75985 /* Main.storyboard */,
+				AF81BDF51E5E422B003174D8 /* ApiManager.swift */,
 				AF3DD8441E5CE2FC00C75985 /* Assets.xcassets */,
 				AF81BDE41E5E328C003174D8 /* circle-user-7.png */,
 				AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */,
@@ -314,6 +317,7 @@
 				AF3D4B151E5CFC19003BDC2E /* LoginViewController.swift in Sources */,
 				AF3DD83E1E5CE2FC00C75985 /* AppDelegate.swift in Sources */,
 				AF81BDF01E5E37C5003174D8 /* SingleChatViewController.swift in Sources */,
+				AF81BDF61E5E422B003174D8 /* ApiManager.swift in Sources */,
 				AF81BDF21E5E3B3A003174D8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

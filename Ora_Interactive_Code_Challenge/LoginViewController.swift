@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController, UITextViewDelegate {
     
@@ -17,11 +18,13 @@ class LoginViewController: UIViewController, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navBar.frame = CGRect(x: 0, y: 0, width: 320, height: 72)
-
-        print(navBar.frame.height)
     }
+    
+    @IBAction func loginButtonPressed(_ sender: UIBarButtonItem) {
+        ApiManager.sharedInstance.getAuthToken()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

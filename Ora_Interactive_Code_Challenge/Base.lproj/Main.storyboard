@@ -85,7 +85,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Login" id="1ww-mN-QHw">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="yub-Pz-sGl" kind="show" id="h93-Ep-7qt"/>
+                                                <action selector="loginButtonPressed:" destination="S4s-fb-xwB" id="2yK-DL-1Eb"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
