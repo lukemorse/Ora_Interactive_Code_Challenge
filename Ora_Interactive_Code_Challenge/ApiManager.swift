@@ -23,19 +23,13 @@ class ApiManager: NSObject {
     let URL_CREATE_USER = URL_BASE + "users"
     let URL_CURRENT_PROFILE = URL_BASE + "users/current"
     let URL_GET_CHATS = URL_BASE + "chats{?page,limit}"
-    let URL_NEW_CHAT = URL_BASE + "chats"
+    let URL_CHATS = URL_BASE + "chats"
     let URL_PATCH_CHAT = URL_BASE + "chats/{id}"
-    let URL_VIEW_WHOLE_CHAT = URL_BASE + "/chats/{id}/chat_messages"
     let URL_NEW_MESSAGE = URL_BASE + "/chats/{id}/chat_messages{?page,limit}"
     
-    func getAuthToken() {
+    func getAuthToken(email: String, password: String) {
         
-        Alamofire.request(URL_LOGIN, method: .post).responseJSON { response in
-            
-//            print("RESPONSE:"); print(response.response)
-//            print("DATA: "); print(response.data)
-//            print("RESULT: "); print(response.result)
-//            print("VALUE: "); print(response.value)
+        Alamofire.request(URL_LOGIN, method: .post).authenticate(user: email, password: password).responseJSON { response in
             
             if let JSON = response.response?.allHeaderFields {
                 let jsonDict = JSON as! [String: String]
@@ -73,11 +67,140 @@ class ApiManager: NSObject {
             "confirm" : user.confirm
                       ]
         
-        Alamofire.request(URL_BASE + "auth/login", method: .post, parameters: params, encoding: URLEncoding.default).responseJSON { response in
-            
-            print(response)
-            
+        if user.password != user.confirm {
+            print("PASSWORD AND CONFIRMATION DO NOT MATCH")
+            return
         }
+        
+        Alamofire.request(URL_CREATE_USER, method: .post, parameters: params, encoding: URLEncoding.default).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func viewCurrentUserProfile() {
+        
+        Alamofire.request(URL_CURRENT_PROFILE).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func updateCurrentUserProfile(user: User) {
+        
+        let params = [
+            "name" : user.name,
+            "email" : user.email,
+            "password" : user.password,
+            "confirm" : user.confirm
+        ]
+        
+        Alamofire.request(URL_CURRENT_PROFILE, method: .patch, parameters: params, encoding: URLEncoding.default).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func getListOfChats() {
+        
+        Alamofire.request(URL_GET_CHATS, encoding: URLEncoding.default).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
+    func createChat(name: String, message: String) {
+        
+        let params = [
+            "name" : name,
+            "message" : message
+        ]
+        
+        Alamofire.request(URL_CHATS, method: .post, parameters: params, encoding: URLEncoding.default).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func updateChat(id: Int) {
+        
+        let updateChatURL = URL_CHATS + "/\(id)"
+        
+        Alamofire.request(updateChatURL, method: .patch, encoding: URLEncoding.default).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func getChatMessages(id: Int) {
+        
+        let getChatMessagesUrl = URL_CHATS + "/\(id)/chat_messages?page=1&limit=50"
+        
+        Alamofire.request(getChatMessagesUrl, encoding: URLEncoding.default).responseString {
+            response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func createChatMessage(id: Int, message: String) {
+        
+        let createChatURL = ""
+        let params = ["message" : message]
+        
+        Alamofire.request(createChatURL, method: .post, parameters: params, encoding: URLEncoding.default).responseString { response in
+            
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
     }
     
     

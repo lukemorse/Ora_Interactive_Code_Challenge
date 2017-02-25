@@ -9,3 +9,5 @@
 import Foundation
 
 let URL_BASE = "https://private-93240c-oracodechallenge.apiary-mock.com/"
+
+var CURRENT_USER: User?

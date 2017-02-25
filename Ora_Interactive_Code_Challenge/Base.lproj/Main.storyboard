@@ -21,56 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" translatesAutoresizingMaskIntoConstraints="NO" id="0qC-st-TZA">
-                                <rect key="frame" x="0.0" y="63" width="375" height="51"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0qC-st-TZA" id="vh5-eE-txm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoI-Bc-4lA">
-                                            <rect key="frame" x="8" y="0.0" width="66" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRE-gr-FSD">
-                                            <rect key="frame" x="129" y="8" width="238" height="35"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="1" green="0.98334086116901487" blue="0.97265933428136564" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" translatesAutoresizingMaskIntoConstraints="NO" id="hfs-Yn-GY9">
-                                <rect key="frame" x="0.0" y="101" width="375" height="51"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hfs-Yn-GY9" id="Dji-MA-Gbt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" placeholder="Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rk-ds-kOI">
-                                            <rect key="frame" x="130" y="12" width="237" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="1" green="0.98334086119999997" blue="0.97265933429999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="textColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-fb-48L">
-                                            <rect key="frame" x="8" y="0.0" width="103" height="50"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-5t-hxs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -91,12 +41,64 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" translatesAutoresizingMaskIntoConstraints="NO" id="0qC-st-TZA">
+                                <rect key="frame" x="0.0" y="90" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0qC-st-TZA" id="vh5-eE-txm">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoI-Bc-4lA">
+                                            <rect key="frame" x="8" y="0.0" width="66" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRE-gr-FSD">
+                                            <rect key="frame" x="129" y="8" width="238" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.98334086116901487" blue="0.97265933428136564" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" translatesAutoresizingMaskIntoConstraints="NO" id="hfs-Yn-GY9">
+                                <rect key="frame" x="0.0" y="128" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hfs-Yn-GY9" id="Dji-MA-Gbt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" placeholder="Your Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2rk-ds-kOI">
+                                            <rect key="frame" x="130" y="12" width="237" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="0.98334086119999997" blue="0.97265933429999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTH-fb-48L">
+                                            <rect key="frame" x="8" y="0.0" width="103" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="GRE-gr-FSD" id="09Z-bT-V42"/>
                         <outlet property="loginButton" destination="1ww-mN-QHw" id="8VS-F6-BC6"/>
                         <outlet property="navBar" destination="BCJ-5t-hxs" id="sGR-qU-Y8g"/>
+                        <outlet property="passwordTextField" destination="2rk-ds-kOI" id="xIP-cT-Kl9"/>
                         <outlet property="registerButton" destination="1ec-WZ-Mg7" id="wWZ-d6-L6y"/>
                     </connections>
                 </viewController>
@@ -140,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="67" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6wd-h7-MPl" id="8LP-Nn-cwi">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Hb-xF-BKB">
@@ -165,7 +167,7 @@
                                 <rect key="frame" x="0.0" y="126" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kei-uA-JQT" id="LfN-z8-3CN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lM7-Ju-eJ5">
@@ -190,7 +192,7 @@
                                 <rect key="frame" x="0.0" y="185" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QqW-DV-xaR" id="5EK-sI-Tfx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJ6-f2-qxa">
@@ -215,7 +217,7 @@
                                 <rect key="frame" x="0.0" y="244" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sxO-8T-AQv" id="EH0-hb-kt9">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYv-PV-ZR3">

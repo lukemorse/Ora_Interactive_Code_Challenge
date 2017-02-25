@@ -15,20 +15,27 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var navBar: UINavigationBar!
     @IBOutlet var registerButton: UIBarButtonItem!
     @IBOutlet var loginButton: UIBarButtonItem!
-
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.frame = CGRect(x: 0, y: 0, width: 320, height: 72)
     }
     
     @IBAction func loginButtonPressed(_ sender: UIBarButtonItem) {
-        ApiManager.sharedInstance.getAuthToken()
-    }
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        if let email = emailTextField.text,
+            let password = passwordTextField.text {
+            ApiManager.sharedInstance.getAuthToken(email: email, password: password)
+        } else {
+            print("EMAIL AND/OR PASSWORD NOT ENTERED")
+        }
+        
+        
     }
     
 
