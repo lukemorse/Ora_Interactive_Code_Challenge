@@ -46,7 +46,7 @@ class ApiManager: NSObject {
                         let name = data["name"] as! String
                         let email = data["email"] as! String
                         
-                        CURRENT_USER = User.init(name: name, email: email, password: password, confirm: password)
+                        CURRENT_USER = User.init(id: 2, name: name, email: email)
                     }
                 }
             }
@@ -62,19 +62,12 @@ class ApiManager: NSObject {
         completion()
     }
     
-    func registerNewUser(user: User) {
+    func registerNewUser(name: String, email: String, password: String) {
         
         let params = [
-            "name" : user.name,
-            "email" : user.email,
-            "password" : user.password,
-            "confirm" : user.confirm
+            "name" : name,
+            "email" : email,
                       ]
-        
-        if user.password != user.confirm {
-            print("PASSWORD AND CONFIRMATION DO NOT MATCH")
-            return
-        }
         
         Alamofire.request(URL_CREATE_USER, method: .post, parameters: params, encoding: URLEncoding.default).responseString { response in
             
@@ -102,13 +95,13 @@ class ApiManager: NSObject {
         }
     }
     
-    func updateCurrentUserProfile(user: User) {
+    func updateCurrentUserProfile(name: String, email: String, password: String, confirm: String) {
         
         let params = [
-            "name" : user.name,
-            "email" : user.email,
-            "password" : user.password,
-            "confirm" : user.confirm
+            "name" : name,
+            "email" : email,
+            "password" : password,
+            "confirm" : confirm
         ]
         
         Alamofire.request(URL_CURRENT_PROFILE, method: .patch, parameters: params, encoding: URLEncoding.default).responseString { response in

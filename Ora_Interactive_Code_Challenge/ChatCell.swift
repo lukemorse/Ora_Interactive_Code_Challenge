@@ -10,6 +10,9 @@ import UIKit
 
 class ChatCell: UITableViewCell {
     
+    @IBOutlet var chatTitleLabel: UILabel!
+    @IBOutlet var userAndTimeLabel: UILabel!
+    @IBOutlet var lastMessageLabel: UILabel!
     
 
     override func awakeFromNib() {
