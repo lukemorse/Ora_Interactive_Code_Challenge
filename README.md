@@ -1,4 +1,4 @@
-# Ora_Interactive_Code_Challenge
+# Ora Interactive Code Challenge
 
 Synopsis
 
