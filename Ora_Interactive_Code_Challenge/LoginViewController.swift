@@ -31,7 +31,6 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if let cell = tableView.dequeueReusableCell(withIdentifier: "OraCell", for: indexPath) as? OraCell {
             cell.cellLabel.text = fields[indexPath.row]
             cells.append(cell)
-            print(cells)
             return cell
         } else {
             return UITableViewCell()
@@ -50,7 +49,10 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         if let email = cells[0]?.cellTextField.text,
             let password = cells[1]?.cellTextField.text {
-            ApiManager.sharedInstance.getAuthToken(email: email, password: password)
+            ApiManager.sharedInstance.login(email: email, password: password) {
+                self.performSegue(withIdentifier: "ChatsSegue", sender: nil)
+            }
+            
         } else {
             print("EMAIL AND/OR PASSWORD NOT ENTERED")
         }

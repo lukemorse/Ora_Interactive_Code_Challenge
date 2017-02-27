@@ -22,12 +22,12 @@ class ApiManager: NSObject {
     let URL_LOGOUT = URL_BASE + "auth/logout"
     let URL_CREATE_USER = URL_BASE + "users"
     let URL_CURRENT_PROFILE = URL_BASE + "users/current"
-    let URL_GET_CHATS = URL_BASE + "chats{?page,limit}"
+    let URL_GET_CHATS = URL_BASE + "chats?page=1&limit=50"
     let URL_CHATS = URL_BASE + "chats"
     let URL_PATCH_CHAT = URL_BASE + "chats/{id}"
     let URL_NEW_MESSAGE = URL_BASE + "/chats/{id}/chat_messages{?page,limit}"
     
-    func getAuthToken(email: String, password: String) {
+    func login(email: String, password: String, completion: @escaping () -> Void) {
         
         Alamofire.request(URL_LOGIN, method: .post).authenticate(user: email, password: password).responseJSON { response in
             
@@ -42,9 +42,11 @@ class ApiManager: NSObject {
                     if let data = jsonDict["data"] as? [String:AnyObject] {
                         print(data)
                         
-                        self.userID = data["id"] as! Int?
-                        self.userEmail = data["email"] as! String?
-                        self.userName = data["name"] as! String?
+//                        self.userID = data["id"] as! Int?
+                        let name = data["name"] as! String
+                        let email = data["email"] as! String
+                        
+                        CURRENT_USER = User.init(name: name, email: email, password: password, confirm: password)
                     }
                 }
             }
@@ -56,6 +58,8 @@ class ApiManager: NSObject {
                 print(error)
             }
         }
+        
+        completion()
     }
     
     func registerNewUser(user: User) {
@@ -121,12 +125,18 @@ class ApiManager: NSObject {
     
     func getListOfChats() {
         
-        Alamofire.request(URL_GET_CHATS, encoding: URLEncoding.default).responseString { response in
+        Alamofire.request(URL_GET_CHATS, encoding: URLEncoding.default).responseJSON { response in
             
             switch response.result {
             case .success:
                 print("Validation Successful")
-                print(response)
+                if let jsonVal = response.value {
+                    if let jsonDict = jsonVal as? [String: Any] {
+                        if let data = jsonDict["data"] as? [String:AnyObject?] {
+                            //*****
+                        }
+                    }
+                }
             case .failure(let error):
                 print(error)
             }

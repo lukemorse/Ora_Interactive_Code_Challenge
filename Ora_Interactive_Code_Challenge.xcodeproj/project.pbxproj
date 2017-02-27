@@ -11,11 +11,12 @@
 		AF3D4B101E5CE5AB003BDC2E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF3DD85B1E5CE3B800C75985 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF3D4B151E5CFC19003BDC2E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D4B141E5CFC19003BDC2E /* LoginViewController.swift */; };
 		AF3DD83E1E5CE2FC00C75985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DD83D1E5CE2FC00C75985 /* AppDelegate.swift */; };
-		AF3DD8431E5CE2FC00C75985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3DD8411E5CE2FC00C75985 /* Main.storyboard */; };
 		AF3DD8451E5CE2FC00C75985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3DD8441E5CE2FC00C75985 /* Assets.xcassets */; };
 		AF3DD8481E5CE2FC00C75985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3DD8461E5CE2FC00C75985 /* LaunchScreen.storyboard */; };
 		AF7BCB991E5F58AF00FFF3B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BCB981E5F58AE00FFF3B0 /* User.swift */; };
 		AF7BCBA21E62092A00FFF3B0 /* LaunchLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AF7BCBA11E62092A00FFF3B0 /* LaunchLogo.png */; };
+		AF7BD8B31E64692700B10BBD /* OraChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BD8B21E64692700B10BBD /* OraChat.swift */; };
+		AF7BD8BC1E647C3100B10BBD /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7BD8BB1E647C3100B10BBD /* ChatCell.swift */; };
 		AF81BDE61E5E328C003174D8 /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81BDE41E5E328C003174D8 /* circle-user-7.png */; };
 		AF81BDE71E5E328C003174D8 /* text-list-7.png in Resources */ = {isa = PBXBuildFile; fileRef = AF81BDE51E5E328C003174D8 /* text-list-7.png */; };
 		AF81BDF01E5E37C5003174D8 /* SingleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */; };
@@ -24,6 +25,9 @@
 		AF81BDF61E5E422B003174D8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BDF51E5E422B003174D8 /* ApiManager.swift */; };
 		AF81BE051E5F2568003174D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF81BE041E5F2568003174D8 /* Constants.swift */; };
 		AFA3903A1E6234BB00C97C4D /* OraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA390391E6234BB00C97C4D /* OraCell.swift */; };
+		AFA390431E636B5200C97C4D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA390421E636B5200C97C4D /* ChatViewController.swift */; };
+		AFA390451E636BC800C97C4D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA390441E636BC800C97C4D /* AccountViewController.swift */; };
+		AFA3904E1E63784C00C97C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA3904C1E63784C00C97C4D /* Main.storyboard */; };
 		AFADB5AF1E5D1D19006FFBBD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,13 +108,14 @@
 		AF3D4B141E5CFC19003BDC2E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF3DD83A1E5CE2FC00C75985 /* Ora_Interactive_Code_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ora_Interactive_Code_Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3DD83D1E5CE2FC00C75985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF3DD8421E5CE2FC00C75985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF3DD8441E5CE2FC00C75985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF3DD8471E5CE2FC00C75985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF3DD8491E5CE2FC00C75985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3DD84F1E5CE3B500C75985 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		AF7BCB981E5F58AE00FFF3B0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF7BCBA11E62092A00FFF3B0 /* LaunchLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchLogo.png; sourceTree = "<group>"; };
+		AF7BD8B21E64692700B10BBD /* OraChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OraChat.swift; sourceTree = "<group>"; };
+		AF7BD8BB1E647C3100B10BBD /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		AF81BDE41E5E328C003174D8 /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle-user-7.png"; sourceTree = "<group>"; };
 		AF81BDE51E5E328C003174D8 /* text-list-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-list-7.png"; sourceTree = "<group>"; };
 		AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleChatViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +124,9 @@
 		AF81BDF51E5E422B003174D8 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		AF81BE041E5F2568003174D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AFA390391E6234BB00C97C4D /* OraCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OraCell.swift; sourceTree = "<group>"; };
+		AFA390421E636B5200C97C4D /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		AFA390441E636BC800C97C4D /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		AFA3904D1E63784C00C97C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,13 +167,9 @@
 				AF81BE001E5F2400003174D8 /* View */,
 				AF81BE011E5F2406003174D8 /* Controller */,
 				AF3DD83D1E5CE2FC00C75985 /* AppDelegate.swift */,
-				AF3DD8411E5CE2FC00C75985 /* Main.storyboard */,
 				AF81BDF51E5E422B003174D8 /* ApiManager.swift */,
 				AF3DD8441E5CE2FC00C75985 /* Assets.xcassets */,
-				AF81BDE41E5E328C003174D8 /* circle-user-7.png */,
-				AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */,
-				AF7BCBA11E62092A00FFF3B0 /* LaunchLogo.png */,
-				AF81BDE51E5E328C003174D8 /* text-list-7.png */,
+				AFA3904C1E63784C00C97C4D /* Main.storyboard */,
 				AF3DD8461E5CE2FC00C75985 /* LaunchScreen.storyboard */,
 				AF3DD8491E5CE2FC00C75985 /* Info.plist */,
 			);
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				AF7BCB981E5F58AE00FFF3B0 /* User.swift */,
+				AF7BD8B21E64692700B10BBD /* OraChat.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				AFA390391E6234BB00C97C4D /* OraCell.swift */,
+				AF7BD8BB1E647C3100B10BBD /* ChatCell.swift */,
+				AFA390461E6371DD00C97C4D /* Images */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -209,6 +216,8 @@
 				AFADB5AE1E5D1D18006FFBBD /* RegisterViewController.swift */,
 				AF81BDEF1E5E37C5003174D8 /* SingleChatViewController.swift */,
 				AF81BDF11E5E3B3A003174D8 /* MainViewController.swift */,
+				AFA390421E636B5200C97C4D /* ChatViewController.swift */,
+				AFA390441E636BC800C97C4D /* AccountViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -219,6 +228,17 @@
 				AF81BE041E5F2568003174D8 /* Constants.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		AFA390461E6371DD00C97C4D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AF81BDE41E5E328C003174D8 /* circle-user-7.png */,
+				AF81BDF31E5E3DEE003174D8 /* plus-simple-7.png */,
+				AF7BCBA11E62092A00FFF3B0 /* LaunchLogo.png */,
+				AF81BDE51E5E328C003174D8 /* text-list-7.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,12 +361,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA3904E1E63784C00C97C4D /* Main.storyboard in Resources */,
 				AF3DD8481E5CE2FC00C75985 /* LaunchScreen.storyboard in Resources */,
 				AF3DD8451E5CE2FC00C75985 /* Assets.xcassets in Resources */,
 				AF81BDE61E5E328C003174D8 /* circle-user-7.png in Resources */,
 				AF7BCBA21E62092A00FFF3B0 /* LaunchLogo.png in Resources */,
 				AF81BDE71E5E328C003174D8 /* text-list-7.png in Resources */,
-				AF3DD8431E5CE2FC00C75985 /* Main.storyboard in Resources */,
 				AF81BDF41E5E3DEE003174D8 /* plus-simple-7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,9 +384,13 @@
 				AF3DD83E1E5CE2FC00C75985 /* AppDelegate.swift in Sources */,
 				AF81BDF01E5E37C5003174D8 /* SingleChatViewController.swift in Sources */,
 				AF7BCB991E5F58AF00FFF3B0 /* User.swift in Sources */,
+				AF7BD8B31E64692700B10BBD /* OraChat.swift in Sources */,
 				AF81BE051E5F2568003174D8 /* Constants.swift in Sources */,
 				AF81BDF61E5E422B003174D8 /* ApiManager.swift in Sources */,
+				AFA390431E636B5200C97C4D /* ChatViewController.swift in Sources */,
+				AF7BD8BC1E647C3100B10BBD /* ChatCell.swift in Sources */,
 				AF81BDF21E5E3B3A003174D8 /* MainViewController.swift in Sources */,
+				AFA390451E636BC800C97C4D /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,20 +405,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF3DD8411E5CE2FC00C75985 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF3DD8421E5CE2FC00C75985 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF3DD8461E5CE2FC00C75985 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AF3DD8471E5CE2FC00C75985 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AFA3904C1E63784C00C97C4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFA3904D1E63784C00C97C4D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
