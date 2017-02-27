@@ -52,9 +52,12 @@ class RegisterViewController: UIViewController, UITableViewDelegate, UITableView
             let password = cells[2]?.cellTextField.text,
             let confirm = cells[3]?.cellTextField.text {
             
-            let user = User.init(name: name, email: email, password: password, confirm: confirm)
+            if password == confirm {
+                ApiManager.sharedInstance.registerNewUser(name: name, email: email, password: password)
+            } else {
+                print("email and password do not match")
+            }
             
-            ApiManager.sharedInstance.registerNewUser(user: user)
         }
     }
     
